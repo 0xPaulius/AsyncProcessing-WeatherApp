@@ -21,7 +21,7 @@ class DataLoader(private val callback: (List<WeatherData>) -> Unit) : AsyncTask<
         }
     }
 
-    @Deprecated("Deprecated in Java")  // WTF?
+    @Deprecated("Deprecated in Java")  // WTF??
     override fun onPostExecute(result: List<WeatherData>) {
         println("DataLoader: onPostExecute called")
         callback(result)
